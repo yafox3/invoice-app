@@ -1,0 +1,9 @@
+@import './vars';
+
+body, html {
+	min-height: 100%;
+}
+
+body {
+	background: $dark;
+}
