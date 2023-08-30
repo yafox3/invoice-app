@@ -1,9 +1,14 @@
 @import './vars';
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700);
 
-body, html {
+body,
+html {
 	min-height: 100%;
 }
 
 body {
+	font-family: Roboto;
+	color: $white;
+	font-size: 18px;
 	background: $dark;
 }

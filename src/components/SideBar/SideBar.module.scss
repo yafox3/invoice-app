@@ -1,0 +1,61 @@
+@import '../../styles/vars';
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 130px;
+	height: 100vh;
+	border-radius: 0 26px 26px 0;
+	background: $light-dark;
+
+	.items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+
+		.decor {
+			position: relative;
+			height: 120px;
+			width: 100%;
+			background: $purple;
+			border-radius: 0 26px 26px 0;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 55px;
+				height: 55px;
+				border-radius: 50%;
+				transform: translate3d(-50%, -50%, 0);
+				background: $white;				
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 60px;
+				border-radius: 30px 0 26px 0;
+				background: lighten($color: $purple, $amount: 7);	
+			}
+		}
+
+		.avatar {
+			padding: 30px;
+			border-top: 1px solid rgba($gray, .2);
+			text-align: center;
+			img {
+				max-width: 55px;
+				max-height: 55px;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+		}
+	}
+}
