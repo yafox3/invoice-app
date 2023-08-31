@@ -1,4 +1,5 @@
 @import './vars';
+@import '~bootstrap-icons/font/bootstrap-icons.scss';
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular,700);
 
 body,
@@ -11,4 +12,9 @@ body {
 	color: $white;
 	font-size: 18px;
 	background: $dark;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
 }

@@ -1,11 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import { privateRoutes, publicRoutes } from '../routes/routes'
+import { observer } from 'mobx-react-lite'
+import UserStore from '../store/UserStore'
 
-const AppRouter = () => {
-	const isAuth = true
+const AppRouter = observer(() => {
+	const isAuth = UserStore.getUser
 	return (
 		<Routes>
-			{isAuth
+			{isAuth.email
 				? privateRoutes.map(route => (
 						<Route
 							key={route.path}
@@ -20,6 +22,6 @@ const AppRouter = () => {
 				  ))}
 		</Routes>
 	)
-}
+})
 
 export default AppRouter

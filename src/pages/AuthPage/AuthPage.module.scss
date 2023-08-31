@@ -1,0 +1,30 @@
+@import '../../styles/vars';
+
+.auth {
+	margin-top: 100px;
+	color: $gray;
+
+	.title {
+		font-size: 44px;
+		letter-spacing: 3px;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+	.body {
+		text-align: center;
+		width: 250px;
+		height: 200px;
+		margin: 0 auto;
+		padding: 30px;
+		background: $light-dark;
+		border-radius: 20px;
+		box-shadow: 0px 0px 30px 0px $light-dark;
+
+		.bodyTitle {
+			font-size: 28px;
+			margin-bottom: 50px;
+		}
+	}
+}
+

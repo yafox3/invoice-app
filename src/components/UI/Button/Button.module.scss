@@ -1,0 +1,29 @@
+@import '../../../styles/vars';
+
+button {
+	outline: none;
+	border: none;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 20px;
+	border-radius: 25px;
+	font-size: 16px;
+	color: $white;
+	cursor: pointer;
+}
+
+.primary {
+	background: $purple;
+}
+
+.default {
+	background: $light-dark;
+}
+
+.danger {
+	background: $red;
+}
