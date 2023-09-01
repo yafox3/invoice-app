@@ -1,0 +1,77 @@
+@import '../../../styles/vars';
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px;
+	border-radius: 15px;
+	background: $light-dark;
+	font-size: 18px;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		.show {
+			color: $dark-purple;
+		}
+		& {
+			transform: scale(1.015);
+		}
+	}
+
+	.id{
+		span {
+			color: $gray;
+		}
+	}
+
+	.date{
+		color: $gray;
+	}
+
+	.email{
+		color: #c9c8c8;
+	}
+
+	.cost{
+		font-size: 26px;
+		font-weight: 500;
+		margin-left: 40px;
+	}
+
+	.show{
+		color: $purple;
+		transition: color .2s ease;
+		i {
+			font-size: 28px;
+		}
+
+	}
+
+	.status {
+		position: relative;
+		padding: 15px 25px 15px 45px;
+		border-radius: 10px;
+		font-weight: 500;
+		color: $orange;
+		background: rgba($orange, .1);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 12px;
+			background: $orange;
+			border-radius: 50%;
+		}
+	}
+
+	.paid {
+		color: $green;
+		background: rgba($green, .1);
+	}
+}

@@ -24,7 +24,11 @@ class UserStore {
 		return this._user
 	}
 
-	public login(user: IUser) {
+	public set setInvoice(invoice: IInvoice) {
+		this._user.invoices = [...this._user.invoices, invoice]
+	}
+
+	public async login(user: IUser) {
 		this._user = {...user}
 	}
 }

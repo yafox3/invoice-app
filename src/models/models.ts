@@ -31,6 +31,8 @@ export interface IInvoice {
 	}
 	description: string
 	items: IItem[]
+	total: number
+	status: boolean
 }
 
 export interface IUser {
