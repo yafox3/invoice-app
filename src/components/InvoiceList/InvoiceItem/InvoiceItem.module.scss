@@ -31,7 +31,7 @@
 	}
 
 	.email{
-		color: #c9c8c8;
+		color: $light-gray;
 	}
 
 	.cost{
@@ -73,5 +73,17 @@
 	.paid {
 		color: $green;
 		background: rgba($green, .1);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 12px;
+			background: $green;
+			border-radius: 50%;
+		}
 	}
 }
